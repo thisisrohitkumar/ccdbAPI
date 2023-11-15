@@ -25,7 +25,7 @@ exports.getAllinstructors=async(req,res)=>{
       apiData=apiData.select(selectfix);
    }
    
-   let limit =Number(req.query.limit) || 5;
+   let limit =Number(req.query.limit);
    apiData=apiData.limit(limit);
 
 
